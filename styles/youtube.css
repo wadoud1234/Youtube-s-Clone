@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*General*/
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1000px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-left: 80px;
+}
+p{
+    font-size: 16px;
+    font-family: roboto;
+}
+/*header*/
+.header{
+    padding-top: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(165, 164, 164);
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+
+}
+#first-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+.between-header-middle{
+    margin-left: 80px;
+    border: 1 solid #ff0000;
+}
+#second-section{
+    display: flex;
+    width: 100%;
+    margin-left: 180px;
+    margin-right: 100px;
+    flex-direction: row;
+    align-items: center;
+}
+#third-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+#third-section .icon{
+    margin-top: 10px;
+}
+#search-icon{
+    align-items: center;
+    margin:0;
+    margin-bottom: 2px; 
+    padding: 10px; 
+    padding-bottom: 12px;
+}
+.icon{
+    height: 26px;
+    width: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 0px;
+    display: flex;
+}
+#menu-icon{
+    margin-left: 7px;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}
+#profile-icon{
+    height: 36px;
+    display: flex;
+    width: 36px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+}
+
+#youtube-logo{
+    height: 24px;
+    margin-left: 20px;
+    width: 100px;
+    margin-top: 5ox;
+    object-fit: contain;
+    display: flex;
+}
+
+#search-button{
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-top: 7px;
+    padding-bottom:1px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid;
+    align-items: center;
+    border-radius: 2px;
+    color: rgb(192,192,192);
+    display: flex;
+}
+#voice-icon{
+    display: flex;
+    align-self: center;
+    height: 24px;
+    width: 24px;
+    
+}
+#voice-button{
+    display: flex;
+    margin-left: 8px;
+    padding: 9px;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    border: none;
+    border-radius: 35px;
+}
+
+#search-bar{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    border:1px solid;
+    border-color: rgb(192,192,192);
+    height: 40px;
+    text-align: start;
+    font-size: 16px;
+}
+/*Aside*/
+#aside{
+    position: fixed;
+    top: 60px;
+    z-index:11;
+    left: 0;
+    background-color: white;
+    width: 80px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.aside-elements{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    height: 44px;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.aside-elements:hover{
+    background-color: rgb(233, 230, 230);
+
+}
+.aside-elements img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    color: black;
+    
+}
+/*Body*/
+#middle{
+    margin: 20px;
+    margin-top: 0;
+    background-color: rgb(247, 244, 244);
+    margin-left: 0;
+    width: 100%;
+
+}
+#the-videos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-left: 20px;
+    width: 1fr;
+    margin-right: 20px;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.video-thumbnail{
+    width: 100%;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+#video-thumb-div{
+    position: relative;
+}
+.video-long-time{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 2px 4px;
+    background-color: rgb(16, 16, 16);
+    border: none;
+    border-radius: 2px;
+}
+.video-title{
+    margin-top: 10px;
+}
+.channel-owner,.video-stats{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    line-height: 6px;
+}
